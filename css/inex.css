@@ -1,0 +1,61 @@
+.caja {
+  width: 100%;
+  height: 50px;
+  background-color: #1c2563;
+}
+.caja .caja1 {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.caja .caja1 .caja2__a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0 5px;
+}
+
+.nav {
+  height: 70px;
+  background-color: #33363a;
+}
+.nav .nav__caja {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .nav__caja .nav__log {
+  height: 100%;
+}
+.nav .nav__caja .nav__log .nav__img {
+  height: 100%;
+  width: 70px;
+}
+.nav .nav__nav {
+  font-size: 30px;
+}
+.nav .nav__nav a {
+  color: white;
+}
+
+.sec1 {
+  width: 100%;
+  height: 650px;
+  background: url(../img/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/*# sourceMappingURL=inex.css.map */

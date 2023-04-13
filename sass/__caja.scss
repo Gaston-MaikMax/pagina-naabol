@@ -1,0 +1,44 @@
+.caja {
+  width: 100%;
+  height: 50px;
+  background-color: #1c2563;
+  .caja1 {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    .caja2__a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      margin: 0 5px;
+    }
+  }
+}
+
+.nav {
+  height: 70px;
+  background-color: #33363a;
+  .nav__caja {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav__log {
+      height: 100%;
+      .nav__img {
+        height: 100%;
+        width: 70px;
+      }
+    }
+  }
+  .nav__nav {
+    font-size: 30px;
+    a {
+      color: white;
+    }
+  }
+}
