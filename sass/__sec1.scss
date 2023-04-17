@@ -9,7 +9,7 @@
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 50px 0;
     .sec1__caja1 {
       color: white;
       display: flex;
@@ -74,7 +74,7 @@
         .sec1__input {
           border: 1px solid #74b3ce;
           height: 40px;
-          width: 400px;
+          width: 300px;
           padding-right: 30px;
           border-radius: 30px;
           padding-left: 10px;
@@ -91,11 +91,68 @@
       }
 
       .sec1__vuelos {
-        display: flex;
-        align-items: center;
+        .sec1__a {
+          display: flex;
+          align-items: center;
+          color: black;
+          text-decoration: none;
+        }
+        .sec1__a:hover {
+          color: white;
+        }
+
         .sec1__img {
           width: 20px;
           margin: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .sec1 {
+    .sec1__caja {
+      .sec1__caja1 {
+        flex-direction: column;
+      }
+    }
+
+    .sec1__caja3 {
+      .sec1__card {
+        display: flex;
+        flex-direction: column;
+        .sec1__in {
+        }
+
+        .sec1__input {
+        }
+      }
+      .sec1__img1 {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .sec1 {
+    .sec1__caja {
+      .sec1__caja1 {
+        flex-direction: column;
+      }
+    }
+
+    .sec1__caja3 {
+      .sec1__card {
+        display: flex;
+        flex-direction: column;
+
+        .sec1__input {
+          width: 100px;
+        }
+
+        .sec1__img {
         }
       }
     }
