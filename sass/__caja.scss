@@ -2,6 +2,9 @@
   width: 100%;
   height: 50px;
   background-color: #1c2563;
+  .caja11 {
+    color: white;
+  }
   .caja1 {
     width: 90%;
     max-width: 1440px;
@@ -9,7 +12,15 @@
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
-    .caja2__a {
+  }
+  .caja2__a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0 5px;
+  }
+  .caja3 {
+    .caja3__a {
       color: white;
       text-decoration: none;
       font-size: 15px;
@@ -23,6 +34,7 @@
   background-color: #33363a;
   .nav__caja {
     width: 90%;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -40,5 +52,24 @@
     a {
       color: white;
     }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .caja {
+    height: 70px;
+    .caja11 {
+    }
+    .caja1 {
+      .caja2__a {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .caja {
+    height: 70px;
   }
 }
