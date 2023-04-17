@@ -17,6 +17,8 @@
       }
     }
     .foot__card2 {
+      margin: 10px 0 0 0;
+
       display: flex;
       .foot__ul {
         list-style: none;
@@ -46,9 +48,12 @@
   }
 }
 
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 800px) {
   .foot {
     .foot__card {
+      flex-direction: column;
+      flex-wrap: wrap;
+
       .foot__card3 {
         margin: 10px 0 0 0;
         display: flex;

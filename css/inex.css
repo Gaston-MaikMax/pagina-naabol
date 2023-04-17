@@ -210,6 +210,7 @@
   list-style: none;
 }
 .foot .foot__card .foot__card2 {
+  margin: 10px 0 0 0;
   display: flex;
 }
 .foot .foot__card .foot__card2 .foot__ul {
@@ -236,6 +237,7 @@
   margin: 10px 0 0 0;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .main__contenedor {
   width: 100%;
@@ -402,6 +404,13 @@
     font-size: 15px;
 =======
 @media screen and (max-width: 100px) {
+=======
+@media screen and (max-width: 800px) {
+  .foot .foot__card {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+>>>>>>> 08946f4d9781468e84983783e684800590bec2c5
   .foot .foot__card .foot__card3 {
     margin: 10px 0 0 0;
     display: flex;
