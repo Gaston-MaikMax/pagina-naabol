@@ -164,6 +164,24 @@ header .caja nav .articulos .navega li:hover > ul {
 }
 .sec1 .sec1__caja .sec1__caja1 .sec1__text .sec1__h1 {
   font-size: 39px;
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 36ch;
+  margin-left: 2px;
+  color: white;
+  animation: typing 5s steps(36), blink 0.1s step-end alternate;
+  overflow: hidden;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 .sec1 .sec1__caja .sec1__caja2 {
   display: flex;
@@ -527,7 +545,7 @@ header .caja nav .articulos .navega li:hover > ul {
   width: 200px;
   height: 220px;
   padding: 20px;
-  margin: 10PX;
+  margin-top: 30PX;
   border-radius: 30px;
   background-color: #1c2563;
 }
@@ -543,6 +561,15 @@ header .caja nav .articulos .navega li:hover > ul {
   color: white;
   text-align: center;
   font-size: 30px;
+}
+
+.animate__animated.animate__bounce {
+  --animate-duration: 4s;
+}
+
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
 }
 
 @media screen and (max-width: 768px) {

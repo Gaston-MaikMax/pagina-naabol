@@ -9,7 +9,7 @@
         width: 200px;
         height: 220px;
         padding: 20px;
-        margin: 10PX;
+        margin-top: 30PX;
         border-radius: 30px;
         background-color: #1c2563;
 
@@ -34,6 +34,15 @@
     }
 }
 
+.animate__animated.animate__bounce {
+    --animate-duration: 4s;
+  }
+  
+
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
 @media screen and (max-width: 768px) {
     .sec__clima--cuidades{
         display: grid;
