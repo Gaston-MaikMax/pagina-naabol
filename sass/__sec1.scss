@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
 
   .sec1__caja {
+    
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
@@ -109,6 +110,20 @@
     }
   }
 }
+
+
+/*tablet*/
+@media screen and (max-width: 768px){
+  .sec1__caja {
+    display: block;
+    
+    .sec__clima{
+      margin: 150px;
+    }
+  }
+}
+
+/*tablet*/
 
 @media screen and (max-width: 810px) {
   .sec1 {

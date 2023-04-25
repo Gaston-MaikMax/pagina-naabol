@@ -95,11 +95,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
    async function mostrarClimaCiudes (){
-       const cuidadesClima = ['Cochabamba','Santa Cruz','La Paz']
+       const cuidadesClima = ['La Paz', 'Cochabamba','Santa Cruz','Beni']
        const key = '2b305071c0ccb4ae2006870be1a1a3d5'
 
         for (let i = 0; i < cuidadesClima.length; i++) {
-
+            console.log(cuidadesClima[i])
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${cuidadesClima[i]},Bolivia, &appid=${key}`;
             
             const respueta = await fetch(url);
@@ -113,7 +113,43 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generarHtml(climaCiudades){
-        const {name, main:{}} = climaCiudades
+        const { name,weather, main:{temp, temp_max, temp_min}} = climaCiudades
+
+        const centigrados = kelvinCentigrados(temp)
+        const max = kelvinCentigrados(temp_max)
+        const min = kelvinCentigrados(temp_min)
+
+        const cuidadesClima = document.querySelector('.sec__clima--cuidades')
+
+        const contenedorClima = document.createElement('div')
+        contenedorClima.classList.add('sec__ciudadesClima') 
+
+        const infomacionClima = document.createElement('section')
+        infomacionClima.classList.add('sec__descripcion')
+
+        const nombreCuidades = document.createElement('p')
+        nombreCuidades.classList.add('title__ciudad')
+        nombreCuidades.textContent = `${name}`
+
+        const cuidadesTemperatura = document.createElement('p')
+        cuidadesTemperatura.classList.add('temperatura__cuidades')
+        cuidadesTemperatura.innerHTML = `${centigrados} &#8451;`
+        
+        const imagenClima = document.createElement('img')
+        imagenClima.classList.add('img__clima')
+         imagenClima.src = `https://api.openweathermap.org/img/w/${weather[0].icon}.png `
+         imagenClima.alt = 'Imagen clima'
+
+        infomacionClima.appendChild(cuidadesTemperatura)
+        infomacionClima.appendChild(imagenClima )
+        
+        contenedorClima.appendChild(nombreCuidades)
+        contenedorClima.appendChild(infomacionClima)
+
+        cuidadesClima.appendChild(contenedorClima)
+
+
+
     }
 
     function kelvinCentigrados(grados){

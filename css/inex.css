@@ -241,6 +241,16 @@ header .caja nav .articulos .navega li:hover > ul {
   margin: 10px;
 }
 
+/*tablet*/
+@media screen and (max-width: 768px) {
+  .sec1__caja {
+    display: block;
+  }
+  .sec1__caja .sec__clima {
+    margin: 150px;
+  }
+}
+/*tablet*/
 @media screen and (max-width: 810px) {
   .sec1 .sec1__caja .sec1__caja1 {
     flex-direction: column;
@@ -507,6 +517,41 @@ header .caja nav .articulos .navega li:hover > ul {
   font-size: 25px;
 }
 
+.sec__clima--cuidades {
+  display: flex;
+  justify-content: center;
+  column-gap: 20PX;
+  flex-wrap: nowrap;
+}
+.sec__clima--cuidades .sec__ciudadesClima {
+  width: 200px;
+  height: 220px;
+  padding: 20px;
+  margin: 10PX;
+  border-radius: 30px;
+  background-color: #1c2563;
+}
+.sec__clima--cuidades .sec__ciudadesClima .title__ciudad {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+.sec__clima--cuidades .sec__ciudadesClima .sec__descripcion {
+  padding-top: 10px;
+}
+.sec__clima--cuidades .sec__ciudadesClima .sec__descripcion .temperatura__cuidades {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .sec__clima--cuidades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
 * {
   padding: 0;
   margin: 0;
