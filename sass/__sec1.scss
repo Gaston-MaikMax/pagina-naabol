@@ -1,6 +1,5 @@
 .sec1 {
   width: 100%;
-
   background: url(../img/fondo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,16 +40,26 @@
 
         align-items: center;
         justify-content: center;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0);
 
         .sec1__a {
           text-decoration: none;
           color: white;
           text-align: center;
-        }
+            }
         .sec1__img {
+          border:  4px solid #74b3ce;
+          border-radius: 50%;
           width: 70px;
+          padding: 5px;
+          background-color: rgba(0, 0, 0, 0.6);
         }
+        .sec1__h4{
+          background-color: #74b3ce;
+          margin: 3px;
+        }
+      }
+      .sec1__card:hover{
       }
     }
     .sec1__caja3 {
@@ -115,8 +124,12 @@
 /*tablet*/
 @media screen and (max-width: 768px){
   .sec1__caja {
-    display: block;
-    
+ 
+    .sec1__caja1{
+     height: 200px; 
+     margin: 10px 0;
+
+    }
     .sec__clima{
       margin: 150px;
     }
