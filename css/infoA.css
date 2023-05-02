@@ -516,7 +516,7 @@
   margin: 0 auto;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .foot .foot__card .foot_card1 .foot__ul {

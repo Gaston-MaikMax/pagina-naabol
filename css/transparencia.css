@@ -210,6 +210,61 @@
     height: 70px;
   }
 }
+.sec1t {
+  width: 100%;
+  height: 200px;
+  background: url(..//img/fondoMV.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.sec1t .sec1t__h2 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+.sec1t .sec1t__p {
+  font-size: 18px;
+}
+.sec1t .a {
+  color: #9b9696;
+}
+
+.sec2t {
+  max-width: 1440PX;
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0 30px 0;
+}
+.sec2t .sec2t__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec2t .sec2t__box button {
+  margin: 20px;
+  background-color: #1D9BF0;
+  border: none;
+  padding: 8px;
+  border-radius: 20px;
+}
+.sec2t .sec2t__box button a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.sec2t .sec2t__box .sec2t__p {
+  font-size: 18px;
+}
+.sec2t h3 {
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid black;
+}
+
 .sec1 {
   width: 100%;
   height: 200px;
@@ -397,4 +452,4 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/*# sourceMappingURL=mision.css.map */
+/*# sourceMappingURL=transparencia.css.map */
