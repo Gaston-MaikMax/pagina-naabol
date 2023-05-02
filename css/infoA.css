@@ -181,8 +181,6 @@
   background-color: #1c2563;
   color: #fff;
   height: 70px;
-  position: sticky;
-  top: 0;
 }
 
 .menu__container {
@@ -190,7 +188,7 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  max-width: 1200px;
+  max-width: 1440px;
   height: 100%;
   margin: 0 auto;
 }
