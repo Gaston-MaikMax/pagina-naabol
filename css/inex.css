@@ -221,7 +221,7 @@
   width: 90%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 80px 0;
 }
 .sec1 .sec1__caja .sec1__caja1 {
   color: white;
@@ -336,6 +336,9 @@
   .sec1__caja .sec1__caja1 {
     height: 200px;
     margin: 10px 0;
+  }
+  .sec1__caja .sec1__caja1 .sec__clima {
+    display: none;
   }
   .sec1__caja .sec__clima {
     margin: 150px;

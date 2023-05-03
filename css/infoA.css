@@ -445,6 +445,7 @@
   padding: 50px 0;
 }
 .sec3i .sec3i__caja {
+  max-width: 1440px;
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -486,6 +487,7 @@
 }
 
 .sec4i {
+  max-width: 1440px;
   width: 90%;
   margin: 0 auto;
   padding: 60px;
