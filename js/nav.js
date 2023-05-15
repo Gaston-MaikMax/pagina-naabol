@@ -1,58 +1,34 @@
-(function(){
-    const listElements = document.querySelectorAll('.menu__item--show');
-    const list = document.querySelector('.menu__links');
-    const menu = document.querySelector('.menu__hamburguer');
+const btn = document.querySelector('#menu-btn');
+const menu = document.querySelector('#sidemenu');
 
-    const addClick = ()=>{
-        listElements.forEach(element =>{
-            element.addEventListener('click', ()=>{
+btn.addEventListener('click', e => {
+  menu.classList.toggle("menu-expanded")
+  menu.classList.toggle("menu-collapsed")
 
-                
-                let subMenu = element.children[1];
-                let height = 0;
-                element.classList.toggle('menu__item--active');
+  document.querySelector('body').classList.toggle('body-expanded');
+});
+
+/* eliminar*/
 
 
-                if(subMenu.clientHeight === 0){
-                    height = subMenu.scrollHeight;
-                }
-
-                subMenu.style.height = `${height}px`;
-
-            });
-        });
+function confirmarEliminacion() {
+  Swal.fire({
+    title: 'Seguro quieres Dardebaja?',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Dar Baja'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire(
+        '',
+        'eliminado',
+        'success'
+      )
     }
-
-    const deleteStyleHeight = ()=>{
-        listElements.forEach(element=>{
-
-            if(element.children[1].getAttribute('style')){
-                element.children[1].removeAttribute('style');
-                element.classList.remove('menu__item--active');
-            }
-
-        });
-    }
-
-
-    window.addEventListener('resize', ()=>{
-        if(window.innerWidth > 800){
-            deleteStyleHeight();
-            if(list.classList.contains('menu__links--show'))
-                list.classList.remove('menu__links--show');
-
-        }else{
-            addClick();
-        }
-    });
-
-    if(window.innerWidth <= 800){
-        addClick();
-    }
-
-    menu.addEventListener('click', ()=> list.classList.toggle('menu__links--show'));
-
-
-
-})();
+  })
+}
+ 
+/*editar*/
 

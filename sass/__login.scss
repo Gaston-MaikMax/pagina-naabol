@@ -1,0 +1,63 @@
+.sec1l {
+  background: url(..//img/fondo-de-login.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 695px;
+
+  .sec1l__card {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    margin: 20px;
+    border-radius: 30px;
+
+    .sec1l__lo {
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .sec1__form {
+      .sec1l__l {
+        font-size: 20px;
+        padding-left: 5px;
+        margin: 10px 0;
+      }
+
+      .sec1l__in {
+        height: 25px;
+        border-radius: 15px;
+        border: none;
+        text-align: center;
+      }
+
+      .btn {
+        height: 30px;
+        width: 100%;
+        background-color: rgb(107, 139, 139);
+        border: none;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: brown;
+      }
+    }
+  }
+}
