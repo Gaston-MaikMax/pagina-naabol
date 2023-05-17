@@ -1,229 +1,174 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  padding: 0;
-  margin: 0;
-  margin-left: 50px;
-}
-body .body-expanded {
-  margin-left: 300px;
-}
-body #sidemenu {
-  background: rgb(0, 0, 0);
-  color: white;
-  position: fixed;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
-body #sidemenu #header {
-  box-sizing: border-box;
-  border-bottom: solid 1px rgb(48, 41, 41);
-}
-body #sidemenu #header #title {
-  box-sizing: border-box;
-  overflow: hidden;
-}
-body #sidemenu #menu-btn {
-  vertical-align: middle;
-  cursor: pointer;
-  padding: 10px;
-  width: 50px;
-  box-sizing: border-box;
-}
-body #sidemenu #menu-btn:hover {
-  background-color: rgb(15, 63, 63);
-}
-body #sidemenu .btn-hamburger {
-  background-color: white;
-  width: 100%;
-  height: 2px;
-  margin: 5px 0;
-}
-body #profile {
-  border-bottom: solid 1px rgb(22, 17, 17);
-  padding: 10px;
-  text-align: center;
-}
-body #profile #photo {
-  box-sizing: border-box;
-  padding: 10px;
-  margin: 0 auto;
-}
-body #profile #photo img {
-  border-radius: 50%;
-  width: 60%;
-}
-body #profile #name {
-  font-size: 24px;
-  padding: 10px;
-  overflow: hidden;
-}
-body #menu-items {
-  overflow: hidden;
-}
-body #menu-items .item {
-  width: 300px;
+.header {
   display: flex;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  /*tabla*/
+}
+.header .header_a {
+  width: 20%;
+  background-color: #1A2049;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header .header_a .sec1m_a {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5px 0;
-  border-bottom: 1px solid rgb(61, 45, 45);
 }
-body #menu-items .item .icon {
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 10px;
-  width: 50px;
-}
-body #menu-items .item .icon img {
-  width: 100%;
-}
-body #menu-items .item .title {
-  font-size: 14px;
-  vertical-align: middle;
-  overflow: hidden;
-  display: inline-block;
+.header .header_a .sec1m_a .sec1m__caja1 {
   padding: 10px 0;
 }
-body #menu-items a {
+.header .header_a .sec1m_a .sec1m__caja2 {
   width: 100%;
+  margin: 10px 0;
   display: flex;
-  background-color: rgb(53, 58, 48);
+  justify-content: center;
 }
-body #menu-items a:hover {
-  background-color: rgb(15, 63, 63);
+.header .header_a .sec1m_a .sec1m__caja2 img {
+  width: 140px;
+  border-radius: 50%;
 }
-body #sidemenu a {
+.header .header_a .sec1m_a .sec1m__caja3 {
+  width: 100%;
+  list-style: none;
+}
+.header .header_a .sec1m_a .sec1m__caja3 li {
+  width: 100%;
+  height: 40px;
+  margin: 3px 0;
+  background-color: rgb(19, 108, 143);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header_a .sec1m_a .sec1m__caja3 li a {
   color: white;
   text-decoration: none;
 }
-
-.menu-expanded {
-  width: 300px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.menu-expanded #header {
+.header .sec2m {
+  width: 90%;
   display: flex;
+  flex-direction: column;
 }
-.menu-expanded #header #title {
-  display: inline-block;
-  width: calc(100% - 50px);
-  margin-right: -5px;
-  padding: 10px;
+.header .sec2m .sec2m__btn {
+  width: 65%;
+  margin: 0 auto;
+  padding: 20px 0;
 }
-.menu-expanded #header #title span {
-  width: 245px;
-  overflow: hidden;
-  display: inline-block;
-}
-.menu-expanded #profile #photo {
-  width: 200px;
-}
-.menu-expanded #profile #name {
+.header .sec2m h2 {
   text-align: center;
-}
-
-.menu-collapsed {
-  width: 50px;
-}
-.menu-collapsed #header #title {
-  width: 0;
-  height: 0;
-  padding: 0;
-  margin: 0;
-}
-.menu-collapsed #profile {
-  padding: 0;
+  font-size: 25px;
+  background-color: #141c5e;
+  color: white;
+  border-radius: 30px;
   margin: 10px 0;
 }
-.menu-collapsed #profile #photo {
-  padding: 0;
-}
-.menu-collapsed #profile #name {
-  display: none;
-}
-.menu-collapsed .item {
-  width: 100px;
-}
-
-.sec1n {
-  text-align: center;
-  margin: 20px;
-}
-
-.sec2n {
+.header .sec2m hr {
   width: 90%;
   margin: 0 auto;
 }
-.sec2n .sec2n__table {
-  width: 100%;
-  border: 1px solid rgb(228, 206, 206);
+.header .sec2m button {
+  width: 200px;
+  height: 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #141c5e;
+  background-color: white;
+  border: 2px solid #141c5e;
 }
-.sec2n .sec2n__table .sec2n__thead {
+.header .sec2m button:hover {
+  background-color: #141c5e;
+  color: white;
+}
+.header .sec2n {
+  width: 90%;
+  margin: 0 auto;
+}
+.header .sec2n .sec2n__table {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.151);
+  margin: 30px 0;
+}
+.header .sec2n .sec2n__table .sec2n__thead {
   color: white;
   background-color: #141c5e;
 }
-.sec2n .sec2n__table .sec2n__thead .sec2n__tr .sec2n__th {
+.header .sec2n .sec2n__table .sec2n__thead .sec2n__tr .sec2n__th {
   padding: 5px 8px;
 }
-.sec2n .sec2n__table .sec2n__tbody {
-  background-color: rgb(223, 219, 217);
+.header .sec2n .sec2n__table .sec2n__tbody {
+  background-color: rgb(255, 255, 255);
 }
-.sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td {
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td {
   padding: 5px;
 }
-.sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__n {
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__n {
   text-align: center;
 }
-.sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__titulo {
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__titulo {
   font-size: 17px;
   font-weight: bold;
 }
-.sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__img {
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__img {
   width: 90px;
   height: 90px;
   display: flex;
   align-items: center;
 }
-.sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__img img {
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__img img {
   width: 100%;
 }
-.sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__descript {
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__descript {
   font-size: 15px;
 }
-.sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__note {
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__note {
   display: flex;
   justify-content: center;
 }
-.sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__note button {
-  padding: 10px;
-  border: none;
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__note button {
+  width: 45px;
+  height: 45px;
   background-color: rgb(231, 203, 42);
-  color: white;
-  font-size: 20px;
+  border: none;
   border-radius: 10px;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
-.sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__note button:hover {
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__note button i {
+  font-size: 25px;
+}
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__note button:hover {
   border: 3px solid rgb(231, 203, 42);
-  background-color: rgb(240, 240, 240);
+  background-color: white;
   color: rgb(231, 203, 42);
 }
-.sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__delete {
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__delete {
   display: flex;
   justify-content: center;
 }
-.sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__delete button {
-  padding: 10px;
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__delete button {
+  width: 45px;
+  height: 45px;
+  background-color: rgb(245, 8, 8);
   border: none;
-  background-color: red;
-  color: white;
-  font-size: 20px;
   border-radius: 10px;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
-.sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__delete button:hover {
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__delete button i {
+  font-size: 25px;
+}
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__delete button:hover {
   border: 3px solid red;
   background-color: white;
   color: red;

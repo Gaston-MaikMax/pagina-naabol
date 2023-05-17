@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>agregar noticias</title>
+  <link rel="stylesheet" href="..//css/servidor.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="header">
+
+    <div class="header_a">
+
+      <div class="sec1m_a">
+        <div class="sec1m__caja1">
+          <h4>Carla Montenegro</h4>
+          <p>Area: Comunicaion</p>
+        </div>
+
+        <div class="sec1m__caja2">
+          <img src="a.png" alt="">
+        </div>
+
+        <div class="sec1m__caja3">
+          <li><a href="">asdsad</a></li>
+          <li><a href="">asdsad</a></li>
+          <li><a href="">asdsad</a></li>
+        </div>
+      </div>
+
+
+
+      <div class="sec1m_a">
+        <div class="sec1m__caja4">
+          <img src="m1.png" alt="">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="sec2m">
+      <div class="sec2m__btn">
+        <h2>Administrador de noticias</h2>
+        <button onclick="crearUrse()">Subir Noticia</button>
+      </div>
+      <hr>
+
+      <div class="sec2n">
+        <table class="sec2n__table">
+          <thead class="sec2n__thead">
+            <tr class="sec2n__tr">
+              <th class="sec2n__th">ID</th>
+              <th class="sec2n__th">TITULO</th>
+              <th class="sec2n__th">IMAGEN</th>
+              <th class="sec2n__th">DESCRIPCION</th>
+              <th class="sec2n__th">EDITAR</th>
+              <th class="sec2n__th">BAJA</th>
+
+            </tr>
+          </thead>
+          <tbody class="sec2n__tbody">
+            <tr class="sec2n__tr">
+              <td class="sec2n__td">
+                <p class="sec2n__n">
+                  1
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <p class="sec2n__titulo">
+                  NAABOL inicia operación de limpieza
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__img">
+                  <img src="nuestra.png" alt="">
+                </div>
+              </td>
+
+              <td class="sec2n__td ">
+                <p class="sec2n__descript">
+                  Naabol celebra este día con mucho amor y cariño para todos los niños y niñas.
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__note">
+                  <button class="btne">
+
+                    <i class='bx bxs-edit'></i>
+                  </button>
+                </div>
+
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__delete">
+                  <button onclick="confirmarEliminacion()">
+                    <i class='bx bxs-coffee-togo'></i>
+                  </button>
+                </div>
+
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="sec2n__tbody">
+            <tr class="sec2n__tr">
+              <td class="sec2n__td">
+                <p class="sec2n__n">
+                  1
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <p class="sec2n__titulo">
+                  NAABOL inicia operación de limpieza
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__img">
+                  <img src="nuestra.png" alt="">
+                </div>
+              </td>
+
+              <td class="sec2n__td ">
+                <p class="sec2n__descript">
+                  Naabol celebra este día con mucho amor y cariño para todos los niños y niñas.
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__note">
+                  <button class="btne">
+
+                    <i class='bx bxs-edit'></i>
+                  </button>
+                </div>
+
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__delete">
+                  <button onclick="confirmarEliminacion()">
+                    <i class='bx bxs-coffee-togo'></i>
+                  </button>
+                </div>
+
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="sec2n__tbody">
+            <tr class="sec2n__tr">
+              <td class="sec2n__td">
+                <p class="sec2n__n">
+                  1
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <p class="sec2n__titulo">
+                  NAABOL inicia operación de limpieza
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__img">
+                  <img src="nuestra.png" alt="">
+                </div>
+              </td>
+
+              <td class="sec2n__td ">
+                <p class="sec2n__descript">
+                  Naabol celebra este día con mucho amor y cariño para todos los niños y niñas.
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__note">
+                  <button class="btne">
+
+                    <i class='bx bxs-edit'></i>
+                  </button>
+                </div>
+
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__delete">
+                  <button onclick="confirmarEliminacion()">
+                    <i class='bx bxs-coffee-togo'></i>
+                  </button>
+                </div>
+
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="sec2n__tbody">
+            <tr class="sec2n__tr">
+              <td class="sec2n__td">
+                <p class="sec2n__n">
+                  1
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <p class="sec2n__titulo">
+                  NAABOL inicia operación de limpieza
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__img">
+                  <img src="nuestra.png" alt="">
+                </div>
+              </td>
+
+              <td class="sec2n__td ">
+                <p class="sec2n__descript">
+                  Naabol celebra este día con mucho amor y cariño para todos los niños y niñas.
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__note">
+                  <button class="btne">
+
+                    <i class='bx bxs-edit'></i>
+                  </button>
+                </div>
+
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__delete">
+                  <button onclick="confirmarEliminacion()">
+                    <i class='bx bxs-coffee-togo'></i>
+                  </button>
+                </div>
+
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="sec2n__tbody">
+            <tr class="sec2n__tr">
+              <td class="sec2n__td">
+                <p class="sec2n__n">
+                  1
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <p class="sec2n__titulo">
+                  NAABOL inicia operación de limpieza
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__img">
+                  <img src="nuestra.png" alt="">
+                </div>
+              </td>
+
+              <td class="sec2n__td ">
+                <p class="sec2n__descript">
+                  Naabol celebra este día con mucho amor y cariño para todos los niños y niñas.
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__note">
+                  <button class="btne">
+
+                    <i class='bx bxs-edit'></i>
+                  </button>
+                </div>
+
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__delete">
+                  <button onclick="confirmarEliminacion()">
+                    <i class='bx bxs-coffee-togo'></i>
+                  </button>
+                </div>
+
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="sec2n__tbody">
+            <tr class="sec2n__tr">
+              <td class="sec2n__td">
+                <p class="sec2n__n">
+                  1
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <p class="sec2n__titulo">
+                  NAABOL inicia operación de limpieza
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__img">
+                  <img src="nuestra.png" alt="">
+                </div>
+              </td>
+
+              <td class="sec2n__td ">
+                <p class="sec2n__descript">
+                  Naabol celebra este día con mucho amor y cariño para todos los niños y niñas.
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__note">
+                  <button class="btne">
+
+                    <i class='bx bxs-edit'></i>
+                  </button>
+                </div>
+
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__delete">
+                  <button onclick="confirmarEliminacion()">
+                    <i class='bx bxs-coffee-togo'></i>
+                  </button>
+                </div>
+
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="sec2n__tbody">
+            <tr class="sec2n__tr">
+              <td class="sec2n__td">
+                <p class="sec2n__n">
+                  1
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <p class="sec2n__titulo">
+                  NAABOL inicia operación de limpieza
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__img">
+                  <img src="nuestra.png" alt="">
+                </div>
+              </td>
+
+              <td class="sec2n__td ">
+                <p class="sec2n__descript">
+                  Naabol celebra este día con mucho amor y cariño para todos los niños y niñas.
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__note">
+                  <button class="btne">
+
+                    <i class='bx bxs-edit'></i>
+                  </button>
+                </div>
+
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__delete">
+                  <button onclick="confirmarEliminacion()">
+                    <i class='bx bxs-coffee-togo'></i>
+                  </button>
+                </div>
+
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="sec2n__tbody">
+            <tr class="sec2n__tr">
+              <td class="sec2n__td">
+                <p class="sec2n__n">
+                  1
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <p class="sec2n__titulo">
+                  NAABOL inicia operación de limpieza
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__img">
+                  <img src="nuestra.png" alt="">
+                </div>
+              </td>
+
+              <td class="sec2n__td ">
+                <p class="sec2n__descript">
+                  Naabol celebra este día con mucho amor y cariño para todos los niños y niñas.
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__note">
+                  <button class="btne">
+
+                    <i class='bx bxs-edit'></i>
+                  </button>
+                </div>
+
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__delete">
+                  <button onclick="confirmarEliminacion()">
+                    <i class='bx bxs-coffee-togo'></i>
+                  </button>
+                </div>
+
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="sec2n__tbody">
+            <tr class="sec2n__tr">
+              <td class="sec2n__td">
+                <p class="sec2n__n">
+                  1
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <p class="sec2n__titulo">
+                  NAABOL inicia operación de limpieza
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__img">
+                  <img src="nuestra.png" alt="">
+                </div>
+              </td>
+
+              <td class="sec2n__td ">
+                <p class="sec2n__descript">
+                  Naabol celebra este día con mucho amor y cariño para todos los niños y niñas.
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__note">
+                  <button class="btne">
+
+                    <i class='bx bxs-edit'></i>
+                  </button>
+                </div>
+
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__delete">
+                  <button onclick="confirmarEliminacion()">
+                    <i class='bx bxs-coffee-togo'></i>
+                  </button>
+                </div>
+
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="sec2n__tbody">
+            <tr class="sec2n__tr">
+              <td class="sec2n__td">
+                <p class="sec2n__n">
+                  1
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <p class="sec2n__titulo">
+                  NAABOL inicia operación de limpieza
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__img">
+                  <img src="nuestra.png" alt="">
+                </div>
+              </td>
+
+              <td class="sec2n__td ">
+                <p class="sec2n__descript">
+                  Naabol celebra este día con mucho amor y cariño para todos los niños y niñas.
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__note">
+                  <button class="btne">
+
+                    <i class='bx bxs-edit'></i>
+                  </button>
+                </div>
+
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__delete">
+                  <button onclick="confirmarEliminacion()">
+                    <i class='bx bxs-coffee-togo'></i>
+                  </button>
+                </div>
+
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="sec2n__tbody">
+            <tr class="sec2n__tr">
+              <td class="sec2n__td">
+                <p class="sec2n__n">
+                  1
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <p class="sec2n__titulo">
+                  NAABOL inicia operación de limpieza
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__img">
+                  <img src="nuestra.png" alt="">
+                </div>
+              </td>
+
+              <td class="sec2n__td ">
+                <p class="sec2n__descript">
+                  Naabol celebra este día con mucho amor y cariño para todos los niños y niñas.
+                </p>
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__note">
+                  <button class="btne">
+
+                    <i class='bx bxs-edit'></i>
+                  </button>
+                </div>
+
+              </td>
+              <td class="sec2n__td ">
+                <div class="sec2n__delete">
+                  <button onclick="confirmarEliminacion()">
+                    <i class='bx bxs-coffee-togo'></i>
+                  </button>
+                </div>
+
+              </td>
+            </tr>
+          </tbody>
+
+
+        </table>
+
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="..//js/nav.js"></script>
+
+</body>
+
+</html>
