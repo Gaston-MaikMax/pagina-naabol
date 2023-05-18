@@ -1,9 +1,9 @@
 /* Error: expected "{".
  *    ,
- * 83 |       font-size: 15px;
+ * 85 |       font-size: 25px;
  *    |                      ^
  *    '
- *   sass\__servidor.scss 83:22  @use
+ *   sass\__servidor.scss 85:22  @use
  *   sass\servidor.scss 1:1      root stylesheet */
 
 body::before {
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 83 \2502        font-size: 15px;\d\a    \2502                       ^\a    \2575 \a   sass\\__servidor.scss 83:22  @use\a   sass\\servidor.scss 1:1      root stylesheet';
+  content: 'Error: expected "{".\a    \2577 \a 85 \2502        font-size: 25px;\d\a    \2502                       ^\a    \2575 \a   sass\\__servidor.scss 85:22  @use\a   sass\\servidor.scss 1:1      root stylesheet';
 }

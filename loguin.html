@@ -15,19 +15,20 @@
       <label for="Login" class="sec1l__lo">Login</label>
       <img src="img/logoA.png" alt="">
 
-      <form action="" class="sec1__form">
-        <label for="" class="sec1l__l">Usuario</label>
+      <form action="" id="formulario" class="sec1__form" method="post">
+        <label for=""  class="sec1l__l">Usuario</label>
         <br>
-        <input type="text" class="sec1l__in" required>
+        <input type="text" id="usuario" class="sec1l__in" >
         <br><br>
-        <label for="" class="sec1l__l">Contraceña</label>
+        <label for=""  class="sec1l__l">Contraceña</label>
         <br>
-        <input type="password" name="pass" class="sec1l__in" required><br><br>
-        <input type="submit" value="Entrar" class="btn">*
+        <input type="password" id="contraseña" name="pass" class="sec1l__in"><br><br>
+        <input type="submit" value="Entrar" class="btn">
       </form>
-    </div>
+    </div>  
   </section>
 
+  <script type="module" src="/js/login.mjs"></script>
 
 </body>
 
