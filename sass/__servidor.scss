@@ -1,6 +1,5 @@
 .header {
   display: flex;
-  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
 
@@ -21,6 +20,7 @@
       align-items: center;
 
       .sec1m__caja1 {
+        margin: 30px 30px;
         padding: 10px 0;
       }
 
@@ -32,7 +32,7 @@
         justify-content: center;
 
         img {
-          width: 140px;
+          width: 90px;
 
           border-radius: 50%;
         }
@@ -68,7 +68,7 @@
 
 
     .sec2m__btn {
-      width: 65%;
+      width: 90%;
 
       margin: 0 auto;
       padding: 20px 0;
@@ -76,11 +76,12 @@
 
     h2 {
       text-align: center;
-      font-size: 25px;
+      font-size: 18px;
       background-color: #141c5e;
       color: white;
-      border-radius: 30px;
+      border-radius: 10px;
       margin: 10px 0;
+      padding: 5px 5px;
     }
 
     hr {
@@ -91,7 +92,8 @@
     button {
       width: 200px;
       height: 30px;
-      border-radius: 30px;
+      font-weight: bold;
+      border-radius: 9px;
       font-size: 18px;
       cursor: pointer;
       color: #141c5e;
@@ -115,17 +117,21 @@
 
 
     .sec2n__table {
+      border-collapse:collapse;
       width: 100%;
       border: 1px solid rgba(0, 0, 0, 0.151);
       margin: 30px 0;
 
       .sec2n__thead {
+        
         color: white;
         background-color: #141c5e;
 
         .sec2n__tr {
           .sec2n__th {
-            padding: 5px 8px;
+            font-size: 13px;
+            background-color: rgb(19, 108, 143);
+            padding: 10px 26px;
           }
         }
       }
@@ -143,7 +149,7 @@
             }
 
             .sec2n__titulo {
-              font-size: 17px;
+              font-size: 14px;
               font-weight: bold;
             }
 
@@ -170,7 +176,7 @@
               button {
                 width: 45px;
                 height: 45px;
-                background-color: rgb(231, 203, 42);
+                background-color: #141c5e;
                 border: none;
                 border-radius: 10px;
                 display: flex;
@@ -184,9 +190,9 @@
               }
 
               button:hover {
-                border: 3px solid rgb(231, 203, 42);
+                border: 3px solid rgb(19, 108, 143);
                 background-color: white;
-                color: rgb(231, 203, 42);
+                color: rgb(19, 108, 143);
               }
             }
 

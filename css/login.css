@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 695px;
+  height: 100vh;
 }
 .sec1l .sec1l__card {
   width: 300px;
@@ -29,13 +29,14 @@
   height: 100px;
 }
 .sec1l .sec1l__card .sec1__form .sec1l__l {
-  font-size: 20px;
+  font-size: 15px;
   padding-left: 5px;
   margin: 10px 0;
 }
 .sec1l .sec1l__card .sec1__form .sec1l__in {
-  height: 25px;
-  border-radius: 15px;
+  height: 30px;
+  width: 200px;
+  border-radius: 10px;
   border: none;
   text-align: center;
 }
@@ -44,7 +45,8 @@
   width: 100%;
   background-color: rgb(107, 139, 139);
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
   color: white;
   cursor: pointer;
 }

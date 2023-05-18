@@ -1,3 +1,7 @@
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
 
     const climaUsuario = document.querySelector('.sec__clima')
@@ -155,4 +159,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function kelvinCentigrados(grados){
         return parseInt(grados-273.15)
     }
+
+
 })
