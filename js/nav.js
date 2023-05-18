@@ -30,6 +30,32 @@ function confirmarEliminacion() {
 }
  
 /*agregar*/
+
+async function crearFormulario() {
+  const { value: formValues } = await Swal.fire({
+    title: 'Formulario',
+    html:
+      '<input id="swal-input1" class="swal2-input" placeholder="Ingrese su Titulo">' +
+      '<textarea id="swal-input2" class="swal2-input" placeholder="Ingrese su mensaje"></textarea>' +
+      '<input id="swal-input3" type="file" class="swal2-file">' +
+      '<input type="submit" value="Enviar" class="swal2-confirm">'
+  })
+
+  if (formValues) {
+    const nombre = formValues[0];
+    const mensaje = formValues[1];
+    const archivo = document.getElementById('swal-input3').files[0];
+
+    // Aquí puedes realizar las acciones que desees con los valores del formulario
+    console.log('Nombre:', nombre);
+    console.log('Mensaje:', mensaje);
+    console.log('Archivo:', archivo);
+  }
+}
+
+crearFormulario();
+
+/*
 async function crearUrse() {
   const { value: formValues } = await Swal.fire({
     title: 'Subir noticia',
@@ -65,7 +91,7 @@ async function crearUrse() {
   if (formValues) {
     Swal.fire(JSON.stringify(formValues))
   }
-}
+}*/
 /*
 function crearUrse() {
 const { value: formValues } = await Swal.fire({

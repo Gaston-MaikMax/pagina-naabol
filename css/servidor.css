@@ -41,7 +41,7 @@
   width: 100%;
   height: 40px;
   margin: 3px 0;
-  background-color: rgb(19, 108, 143);
+  background-color: rgb(53, 81, 92);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +63,7 @@
 .header .sec2m h2 {
   text-align: center;
   font-size: 25px;
-  background-color: #141c5e;
+  background-color: #414ba5;
   color: white;
   border-radius: 30px;
   margin: 10px 0;
@@ -78,12 +78,13 @@
   border-radius: 30px;
   font-size: 18px;
   cursor: pointer;
-  color: #141c5e;
+  color: #414ba5;
   background-color: white;
-  border: 2px solid #141c5e;
+  border: 2px solid #414ba5;
+  font-weight: bold;
 }
 .header .sec2m button:hover {
-  background-color: #141c5e;
+  background-color: #414ba5;
   color: white;
 }
 .header .sec2n {
@@ -97,7 +98,7 @@
 }
 .header .sec2n .sec2n__table .sec2n__thead {
   color: white;
-  background-color: #141c5e;
+  background-color: #414ba5;
 }
 .header .sec2n .sec2n__table .sec2n__thead .sec2n__tr .sec2n__th {
   padding: 5px 8px;
