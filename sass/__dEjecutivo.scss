@@ -1,81 +1,87 @@
-.sec1d{
-  width: 100%;
+.sec1d {
+  max-width: 1440px;
+  width: 98%;
   height: auto;
-  margin:  0 auto;
+  margin: 0 auto;
 
-  .sec1d__img{
+
+  .sec1d__img {
     width: 100%;
-    margin: 0 auto ;
+    height: 100px;
+    margin: 0 auto;
     height: auto;
 
   }
 }
 
-.sec2d{
-  padding: 50px 0;
-  .sec2d__box{
+.sec2d {
+  padding: 30px 0 0 0;
+
+  .sec2d__box {
     background-color: #1C2563;
-    margin: 30px 0;
-    .sec2d__card{
-      width: 90%;
+    margin: 0.1px 0;
+    padding: 30px 0;
+
+    .sec2d__caja {
       max-width: 1440px;
-      margin:  0 auto;
-      padding: 30px 0 ;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      .sec2d__con{
-        margin: 10px ;
+      width: 90%;
+      margin: 0 auto;
+      color: white;
+
+      .sec2d__text {
+        font-size: 20px;
+        padding: 15px 0 50px 0;
+      }
+
+      .sec2__con {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        .sec2d__h4{
-          color: white;
-          font-size: 20px;
-          margin: 20px ;
+        flex-wrap: wrap;
+
+        .sec2d__card {
+          width: 180px;
+          height: 190px;
+          background-color: #F1F0FE;
+          border-radius: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          margin: 50px 20px;
+
+          .sec2d__img {
+            width: 100%;
+            height: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-50px);
+
+            img {
+
+              width: 120px;
+              height: 120px;
+              border-radius: 50%;
+
+            }
+          }
+
+          .sec2d__test {
+            color: black;
+            text-align: center;
+
+            p {
+              font-size: 12px;
+            }
+
+            h5 {
+              font-size: 20px;
+              color: #74B3CE;
+
+            }
+          }
         }
       }
-      .sec2d__text{
-        width: 55%;
-        color: white;
-        display: flex;
-        align-items: center;
-        margin: 10px 0;
-      }
-    } 
-  }
-  .c1{
-    background-color: #999999;
-    .d1{
-      flex-direction: row-reverse;
+
     }
   }
-}
-
-
-
-@media screen and (max-width:997px){
-
-
-
-.sec2d{
-
-  .sec2d__box{
-   
-    .sec2d__card{
-     
-      .sec2d__con{
-       
-        .sec2d__h4{
-         
-        }
-      }
-      .sec2d__text{
-        width: 100%;
-      }
-    } 
-  }
-}
-
 }
