@@ -1,18 +1,246 @@
-/* Error: expected "{".
- *    ,
- * 85 |       font-size: 25px;
- *    |                      ^
- *    '
- *   sass\__servidor.scss 85:22  @use
- *   sass\servidor.scss 1:1      root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 85 \2502        font-size: 25px;\d\a    \2502                       ^\a    \2575 \a   sass\\__servidor.scss 85:22  @use\a   sass\\servidor.scss 1:1      root stylesheet';
+.header {
+  display: flex;
+  width: 100%;
+  /*tabla*/
 }
+.header .header_a {
+  width: 20%;
+  background-color: #1A2049;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header .header_a .sec1m_a {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .header_a .sec1m_a .sec1m__caja1 {
+  margin: 30px 30px;
+  padding: 10px 0;
+  margin-bottom: 60px;
+  margin-top: 25px;
+}
+.header .header_a .sec1m_a .sec1m__caja2 {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.header .header_a .sec1m_a .sec1m__caja2 img {
+  width: 90px;
+  border-radius: 50%;
+}
+.header .header_a .sec1m_a .sec1m__caja3 {
+  width: 100%;
+  list-style: none;
+}
+.header .header_a .sec1m_a .sec1m__caja3 li {
+  width: 100%;
+  height: 40px;
+  margin: 3px 0;
+  background-color: rgb(53, 81, 92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header_a .sec1m_a .sec1m__caja3 li a {
+  color: white;
+  text-decoration: none;
+}
+.header .sec2m {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.header .sec2m .sec2m__btn {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.header .sec2m h2 {
+  text-align: center;
+  font-size: 25px;
+  background-color: #141c5e;
+  color: white;
+  border-radius: 30px;
+  margin: 10px 0;
+  padding: 5px 5px;
+}
+.header .sec2m hr {
+  width: 90%;
+  margin: 0 auto;
+}
+.header .sec2m button {
+  width: 200px;
+  height: 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #414ba5;
+  background-color: white;
+  border: 2px solid #414ba5;
+  font-weight: bold;
+}
+.header .sec2m button:hover {
+  background-color: #414ba5;
+  color: white;
+}
+.header .sec2n {
+  width: 90%;
+  margin: 0 auto;
+}
+.header .sec2n .sec2n__table {
+  border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+}
+.header .sec2n .sec2n__table .sec2n__thead {
+  color: white;
+  background-color: #414ba5;
+}
+.header .sec2n .sec2n__table .sec2n__thead .sec2n__tr .sec2n__th {
+  padding: 5px 8px;
+}
+.header .sec2n .sec2n__table .sec2n__tbody {
+  background-color: rgb(255, 255, 255);
+}
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td {
+  padding: 5px;
+}
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__n {
+  text-align: center;
+}
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__titulo {
+  font-size: 17px;
+  font-weight: bold;
+}
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__img {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__img img {
+  width: 100%;
+}
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__descript {
+  font-size: 15px;
+}
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__note {
+  display: flex;
+  justify-content: center;
+}
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__note button {
+  width: 45px;
+  height: 45px;
+  background-color: #1A2049;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__note button i {
+  font-size: 25px;
+}
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__note button:hover {
+  border: 3px solid rgb(53, 81, 92);
+  background-color: white;
+  color: rgb(19, 108, 143);
+}
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__delete {
+  display: flex;
+  justify-content: center;
+}
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__delete button {
+  width: 45px;
+  height: 45px;
+  background-color: rgb(245, 8, 8);
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__delete button i {
+  font-size: 25px;
+}
+.header .sec2n .sec2n__table .sec2n__tbody .sec2n__tr .sec2n__td .sec2n__delete button:hover {
+  border: 3px solid red;
+  background-color: white;
+  color: red;
+}
+
+.sec3n {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.sec3n .sec3n__title {
+  background-color: #141c5e;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 22px;
+}
+.sec3n .sec4n {
+  width: 100%;
+  background-color: rgb(213, 214, 214);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 30px;
+}
+.sec3n .sec4n h4 {
+  margin: 10px 0;
+}
+.sec3n .sec4n .text {
+  width: 100%;
+  height: 25px;
+  border-radius: 30px;
+  padding: 0 10px;
+}
+.sec3n .sec4n .form {
+  width: 100%;
+}
+.sec3n .sec4n p {
+  margin: 5px;
+}
+.sec3n .sec4n .texta {
+  width: 100%;
+  border-radius: 30px;
+  padding: 20px;
+}
+.sec3n .sec4n .btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 10px;
+}
+.sec3n .sec4n .btn button {
+  background-color: #141c5e;
+  border-radius: 20px;
+  height: 40px;
+  background-color: #141c5e;
+  padding: 0 20px;
+  border: none;
+}
+.sec3n .sec4n .btn button a {
+  color: white;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*# sourceMappingURL=servidor.css.map */

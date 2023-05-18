@@ -81,10 +81,6 @@
       text-align: center;
       font-size: 25px;
       background-color: #141c5e;
-=======
-      font-size: 25px;
-      background-color: #414ba5;
->>>>>>> 6c875b4a2c3ba220ee5279d76f5989ccf633a799
       color: white;
       border-radius: 30px;
       margin: 10px 0;
@@ -94,7 +90,7 @@
     hr {
       width: 90%;
       margin: 0 auto;
-    }
+    } 
 
     button {
       width: 200px;
@@ -132,12 +128,7 @@
       .sec2n__thead {
         
         color: white;
-<<<<<<< HEAD
-        background-color: #4755BA;
-        padding: 1px;
-=======
         background-color: #414ba5;
->>>>>>> 6c875b4a2c3ba220ee5279d76f5989ccf633a799
 
         .sec2n__tr {
           .sec2n__th {
@@ -186,7 +177,7 @@
               button {
                 width: 45px;
                 height: 45px;
-                background-color: rgb(231, 203, 42);
+                background-color: #1A2049;
                 border: none;
                 border-radius: 10px;
                 display: flex;
@@ -200,7 +191,7 @@
               }
 
               button:hover {
-                border: 3px solid rgb(231, 203, 42);
+                border: 3px solid   rgb(53, 81, 92);
                 background-color: white;
                 color: rgb(19, 108, 143);
               }
